@@ -16,5 +16,10 @@ namespace ScreenSaver
         {
             InitializeComponent();
         }
+
+        private void frmScreenSaver_KeyDown(object sender, KeyEventArgs e)
+        {
+            Close();
+        }
     }
 }
