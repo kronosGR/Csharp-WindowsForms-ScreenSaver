@@ -12,6 +12,18 @@ namespace ScreenSaver
 {
     public partial class frmScreenSaver : Form
     {
+        List<Image> BGImages = new List<Image>();
+        List<BritPic> BritPics = new List<BritPic>();
+        Random rand = new Random();
+
+        class BritPic
+        {
+            public int Picnum;
+            public float X;
+            public float Y;
+            public float Speed;
+        }
+
         public frmScreenSaver()
         {
             InitializeComponent();
